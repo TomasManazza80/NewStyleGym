@@ -1,10 +1,4 @@
-/*
 
-Tooplate 2119 Gymso Fitness
-
-https://www.tooplate.com/view/2119-gymso-fitness
-
-*/
 
   @font-face {
       font-family: 'Plain';
@@ -31,7 +25,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   }
 
   :root {
-    --primary-color:        #f13a11;
+    --primary-color:        #d4b00d;
     --white-color:          #ffffff;
     --dark-color:           #171819;
     --about-bg-color:       #f9f9f9;
@@ -229,19 +223,42 @@ https://www.tooplate.com/view/2119-gymso-fitness
 
   .modal-content {
     padding: 2rem 3rem;
-  }
+    background-color: rgba(255, 255, 255, 0.2); /* Ajustar opacidad: 0.0 (completamente transparente) a 1.0 (completamente opaco) */
+    width: 450px;
+    height: auto;
+    color: white;
+    backdrop-filter: blur(10px); /* Añadir desenfoque para un efecto elegante */
+    border-radius: 10px; /* Bordes redondeados para una apariencia más suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir una sombra para mayor profundidad */
+    transition: all 0.3s ease-in-out; /* Transición suave para los cambios */
+}
 
-  .modal-header,
-  .modal-body,
-  .modal-footer {
-    border: 0;
+
+.modal-header,
+.modal-footer {
+    border: 0;  
     padding: 0;
-  }
+}
 
-  .membership-form a {
+.modal-body {
+  margin-top: 10px;
+    height: 300px;
+    width: 600px;
+}
+
+h6 {
+  margin-top: 30px;
+}
+
+.membership-form a {
     color: var(--primary-color);
-  }
+}
 
+.usersContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
 
   /*---------------------------------------
     FEATURE          
@@ -492,9 +509,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
     opacity: 0.85;
   }
 
-  .team-thumb {
-    position: relative;
-  }
+  
 
   .team-info {
     background: var(--white-color);
@@ -518,6 +533,7 @@ https://www.tooplate.com/view/2119-gymso-fitness
   .team-info .social-icon li {
     display: block;
   }
+
 
 
   /*---------------------------------------
@@ -565,7 +581,10 @@ https://www.tooplate.com/view/2119-gymso-fitness
     width: 100%;
   }
 
-
+  .imgF{
+    height: 20px;
+    width: 20px;
+}
   /*---------------------------------------
      FOOTER              
   -----------------------------------------*/
@@ -667,3 +686,27 @@ https://www.tooplate.com/view/2119-gymso-fitness
       display: block;
     }
   }
+ /*---------------------------------------
+contenedor de personal     
+  -----------------------------------------*/
+
+  .contenedorGeneral {
+ display: flex;
+ width: 100%;
+  }
+
+   /*---------------------------------------
+     tamaño de imagen             
+  -----------------------------------------*/
+
+.imgPersonal{
+    height: 400px;
+    width: 300px;
+}
+
+
+.cardPersonal{
+   margin-left: 50px;
+    width: 300px;
+    height: auto;
+}

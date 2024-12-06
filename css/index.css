@@ -34,3 +34,27 @@
     border-bottom-color: #ff6347;
 }
 
+
+.class-thumb {
+    display: inline-block;
+    width: 300px;
+    
+    vertical-align: top;
+  }
+  
+
+
+
+  @media (max-width: 768px) {
+    .class-thumb {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+
+  .imgAcividad1{
+    height: 200px;
+    width: 300px;
+    
+  }
